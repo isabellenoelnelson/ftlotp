@@ -672,6 +672,186 @@ async function seed() {
 	await boma.addDiningExperience(buffet);
 	await boma.addDiningExperience(themed);
 
+	const cabanaBar = await Restaurant.create({
+		name: "Cabana Bar and Beach Club",
+		location: "Walt Disney World Dolphin Hotel",
+		type: "table",
+		price: "low",
+		description:
+			"Enjoy gourmet appetizers and main bites by the Dolphin Lap Pool: fish tacos, flatbreads, grilled Angus hanger steak and more. Sip signature cocktails served at a chic illuminated bar in the evening.",
+	});
+
+	await cabanaBar.addCuisine(american);
+	await cabanaBar.addDiningExperience(casual);
+
+	const cafeRix = await Restaurant.create({
+		name: "Cafe Rix",
+		location: "Disney's Coronado Springs Resort",
+		type: "quick",
+		price: "low",
+		description:
+			"Choose from an array of pastries, yogurts, fruits and salads, along with sweets like dessert cakes, gelatos and sorbets. Specialty coffees and smoothies are also available.",
+	});
+
+	await cafeRix.addCuisine(american);
+	await cafeRix.addDiningExperience(counter);
+
+	const californiaGrill = await Restaurant.create({
+		name: "California Grill",
+		location: "Disney's Contemporary Resort",
+		type: "table",
+		price: "high",
+		description:
+			"Savor the finest in Californian cooking, as you take in the sights of Seven Seas Lagoon and Magic Kingdom park.",
+	});
+
+	await californiaGrill.addCuisine(american);
+	await californiaGrill.addCuisine(seafood);
+	await californiaGrill.addCuisine(sushi);
+	await californiaGrill.addDiningExperience(fine);
+
+	const capa = await Restaurant.create({
+		name: "Capa",
+		location: "Four Season's Resort Orlando",
+		type: "table",
+		price: "extra",
+		description:
+			"Indulge in an unforgettable evening at this sleek restaurant and bar perched at the top of Four Seasons Resort Orlando.",
+	});
+
+	await capa.addCuisine(steakhouse);
+	await capa.addDiningExperience(fine);
+
+	const capeMayCafe = await Restaurant.create({
+		name: "Cape May Cafe",
+		location: "Disney's Beach Club Resort",
+		type: "table",
+		price: "high",
+		description:
+			"Coast on down to this New England-style venue where you can join some Disney pals for a lively Character breakfast—or set sail later in the day for a seafood dinner buffet. Please note: Disney Characters join Guests for breakfast only.",
+	});
+
+	await capeMayCafe.addCuisine(american);
+	await capeMayCafe.addCuisine(seafood);
+	await capeMayCafe.addDiningExperience(buffet);
+	await capeMayCafe.addDiningExperience(casual);
+	await capeMayCafe.addDiningExperience(character);
+
+	const capeTownLounge = await Restaurant.create({
+		name: "Cape Town Lounge and Wine Bar",
+		location: "Disney's Animal Kingdom Lodge",
+		type: "table",
+		price: "low",
+		description:
+			"Sample South African wines at this intimate watering hole near Jiko – The Cooking Place. Enjoy an appetizer and wine pairing prior to your meal at Jiko, or order from the full Jiko menu and dine at the bar. A full bar is also available.",
+	});
+
+	await capeTownLounge.addCuisine(african);
+	await capeTownLounge.addDiningExperience(lounge);
+
+	const captCooks = await Restaurant.create({
+		name: "Capt. Cook's",
+		location: "Disney's Polynesian Village Resort",
+		type: "quick",
+		price: "low",
+		description:
+			"Explore your options each morning as you start the day with a Mickey Waffle or banana-stuffed Tonga Toast. For lunch or dinner, discover an adventurous assortment of sandwiches, salads and more. Beer and wine are also available.",
+	});
+
+	await captCooks.addCuisine(american);
+	await captCooks.addCuisine(seafood);
+	await captCooks.addDiningExperience(counter);
+	await captCooks.addDiningExperience(mobile);
+
+	const caravanRoad = await Restaurant.create({
+		name: "Caravan Road",
+		location: "Disney's Animal Kingdom",
+		type: "quick",
+		price: "low",
+		description:
+			"Flow by this refreshing kiosk—located directly across Discovery River from the Tree of Life—where you can discover a cascade of vegetarian cuisine and a selection of beverages, along with exciting seasonal fare offered throughout the year.",
+	});
+
+	await caravanRoad.addCuisine(asian);
+	await caravanRoad.addDiningExperience(fastCasual);
+
+	const caseysCorner = await Restaurant.create({
+		name: "Casey's Corner",
+		location: "Magic Kingdom",
+		type: "quick",
+		price: "low",
+		description:
+			"Hit it out of the park with American baseball favorites: hot dogs, corn dog nuggets, French fries and ice-cold lemonade slushies. You may even catch Jim tickling the ivories to ragtime tunes outside. Soft drinks are also available.",
+	});
+
+	await caseysCorner.addCuisine(american);
+	await caseysCorner.addDiningExperience(counter);
+	await caseysCorner.addDiningExperience(mobile);
+
+	const catalinaEddies = await Restaurant.create({
+		name: "Catalina Eddie's",
+		location: "Disney's Hollywood Studios",
+		type: "quick",
+		price: "low",
+		description:
+			"Cruise over for fresh hot pizza, zesty Caesar salads and more. Then, satisfy your sweet tooth with cheesecake verrine. Hot and cold drinks are also available.",
+	});
+
+	await catalinaEddies.addCuisine(american);
+	await catalinaEddies.addDiningExperience(counter);
+	await catalinaEddies.addDiningExperience(mobile);
+
+	const centertownMarket = await Restaurant.create({
+		name: "Centertown Market",
+		location: "Disney's Caribbean Beach Resort",
+		type: "quick",
+		price: "low",
+		description:
+			"Savor exotic island flavors at this fast-casual restaurant with an indoor street market vibe featuring classic breakfast dishes and flavorful Latin- and Caribbean-inspired lunch and dinner menus.",
+	});
+
+	await centertownMarket.addCuisine(american);
+	await centertownMarket.addCuisine(latin);
+	await centertownMarket.addDiningExperience(fastCasual);
+	await centertownMarket.addDiningExperience(mobile);
+
+	const centertownMarketGrabAndGo = await Restaurant.create({
+		name: "Centertown Market Grab & Go",
+		location: "Disney's Caribbean Beach Resort",
+		type: "quick",
+		price: "low",
+		description:
+			"Visit this convenient market for fast meals on the go—from salads, sandwiches and snacks to bakery items and a variety of bottled beverages.",
+	});
+
+	await centertownMarketGrabAndGo.addCuisine(american);
+	await centertownMarketGrabAndGo.addDiningExperience(fastCasual);
+
+	const chefArt = await Restaurant.create({
+		name: "Chef Art Smith's Homecomin'",
+		location: "Disney Springs",
+		type: "table",
+		price: "medium",
+		description:
+			"Dig into farm-to-fork cuisine showcasing Florida’s freshest flavors—all crafted from recipes by this award-winning celebrity chef!",
+	});
+
+	await chefArt.addCuisine(american);
+	await chefArt.addDiningExperience(casual);
+
+	const chefMickeys = await Restaurant.create({
+		name: "Chef Mickey's",
+		location: "Disneyy's Contemporary Resort",
+		type: "table",
+		price: "medium",
+		description:
+			"Dig into farm-to-fork cuisine showcasing Florida’s freshest flavors—all crafted from recipes by this award-winning celebrity chef!",
+	});
+
+	await chefMickeys.addCuisine(american);
+	await chefMickeys.addDiningExperience(character);
+	await chefMickeys.addDiningExperience(family);
+
 	console.log(`seeded successfully`);
 }
 
